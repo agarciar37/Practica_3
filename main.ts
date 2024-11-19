@@ -52,6 +52,3 @@ const handler = async (req: Request): Promise<Response> => {
 }
 
 Deno.serve({ port: 6768 }, handler);
-
-// coordenadas de aranjuez, madrid
-// 40.0486, -3.6057
