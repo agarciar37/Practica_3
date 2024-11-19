@@ -39,7 +39,7 @@ const handler = async (req: Request): Promise<Response> => {
     } else if (path === "/kids/malos") {
       const kids = await getBadKids(kidCollection, locationCollection);
       return new Response(JSON.stringify(kids), { status: 200 });
-    } else if (method === "GET" && path === "/entregas") {
+    } else if (path === "/entregas") {
       const deliveries = await getDeliveries(locationCollection);
       return new Response(JSON.stringify(deliveries), { status: 200 });
     } else if (path === "/ruta") {
