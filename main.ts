@@ -14,7 +14,7 @@ console.log("Connected to MongoDB");
 
 const db = client.db("niños");
 
-const kidCollection = db.collection<KidModel>("ninos");
+const kidCollection = db.collection<KidModel>("kids");
 const locationCollection = db.collection<LocationModel>("ubicaciones");
 
 const handler = async (req: Request): Promise<Response> => {
